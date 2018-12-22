@@ -1,17 +1,24 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-	
-
 <head>
     <meta charset="utf-8"/>
-    <title>{% block title %}FiberLabs{% endblock %}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, search, form, icons" />
+    <title>{% block title %}Fiber Labs{% endblock %}</title>
     <link href="{% static "css/base.css" %}" rel="stylesheet">
-
+	<link rel="stylesheet" href="{% static "css/demo.css"%}">
+	<link rel="stylesheet" href="{% static "css/footer-distributed-with-search.css"%}">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 		<div id="header">
 				<a href="/" class="logo"><img src="{% static "img\logo_fiberlabs-logo.png" %}" alt="logo" style=" width: 150px;" /></a>
 		</div>
-    
+<style>
+	body{
+			background-color: #fefefe;
+		}
+</style>    
 </head>
 
 <body>
@@ -34,6 +41,40 @@
 <div id="content">
     {% block content %}
     {% endblock %}
+
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Fiber Labs &copy; 2015</p>
+
+			</div>
+
+			<div class="footer-right">
+
+				<form method="get" action="#">
+					<input placeholder="Search our website" name="search" />
+					<i class="fa fa-search"></i>
+				</form>
+
+			</div>
+
+		</footer>
+    
 	
 </body>
 </html>
