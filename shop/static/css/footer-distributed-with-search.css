@@ -2,17 +2,21 @@
 	background-color: #292c2f;
 	box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
 	box-sizing: padding-box;
-	width: 100%;
 	font: bold 16px sans-serif;
 	text-align: left;
-    position: relative;
+
     left: -10%;
 	padding: 50px 60px;
 	margin-top: 80px;
 	overflow: auto;
 	min-width: 1500px;
     max-width: none;
-    width: 100%;
+
+	position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;}
+	
 }
 
 /* Footer left */
@@ -51,7 +55,7 @@
 /* The search form */
 
 .footer-distributed form{
-	position: relative;
+	position: relative; right: 60px;
 }
 
 .footer-distributed form input{
@@ -61,7 +65,7 @@
 	background-color:  #1f2022;
 	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
 	border: none;
-
+	float: center-right;
 	font: inherit;
 	font-size: 14px;
 	font-weight: normal;
